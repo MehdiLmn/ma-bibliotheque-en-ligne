@@ -135,15 +135,21 @@ var Livre = /*#__PURE__*/_createClass(function Livre(titre, auteur, image) {
   var _this = this;
   _classCallCheck(this, Livre);
   _defineProperty(this, "createNewLivre", function () {
+    $(document).ready(function () {
+      $("button").click(function () {
+        $("textarea").toggle();
+      });
+    });
     var NewLivre = document.createElement("div");
     NewLivre.classList.add("col-md-3");
-    NewLivre.innerHTML = "<div class=\"card\" style=\"width: 15rem;\">\n            <img src=\"".concat(_this.image, "\" class=\"card-img-top\" alt=\"").concat(_this.titre, "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">").concat(_this.titre, "</h5>\n            <p class=\"card-text\">").concat(_this.auteur, "</p>\n            <button class=\"btn btn-danger btn-sm\" id=\"supprimer-livre\">Supprimer</button>\n        </div>\n    </div>");
+    NewLivre.innerHTML = "<div class=\"card\" style=\"width: 15rem;\">\n            <img src=\"".concat(_this.image, "\" class=\"card-img-top\" alt=\"").concat(_this.titre, "\">\n        <div class=\"card-body\">\n            <h5 class=\"card-title\">").concat(_this.titre, "</h5>\n            <p class=\"card-text\">").concat(_this.auteur, "</p>\n\n            <button type=\"button\" class=\"btn btn-success btn-sm\">Votre r\xE9sum\xE9</button>\n            <textarea class=\"form-control mt-2 mb-2\" id=\"exampleFormControlTextarea1\" rows=\"2\"></textarea>\n            \n            <button class=\"btn btn-danger btn-sm\" id=\"supprimer-livre\">Supprimer</button>\n        </div>\n    </div>");
     return NewLivre;
   });
   this.titre = titre;
   this.auteur = auteur;
   this.image = image;
 });
+;
 var _default = Livre;
 exports.default = _default;
 },{}],"src/script.js":[function(require,module,exports) {
@@ -206,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64027" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59725" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

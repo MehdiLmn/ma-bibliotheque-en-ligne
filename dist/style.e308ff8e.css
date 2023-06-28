@@ -1,2 +1,16 @@
+body {
+    background-image: url(https://cdn.shopify.com/s/files/1/0275/9779/9466/products/papier-peint-trompe-l-oeil-authentique-bibliotheque-muralconcept-117604.jpg?v=1675344618);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.text-center {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #157347;
+}
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */

@@ -31,3 +31,5 @@ form.addEventListener('submit', (event) => {
     champAuteur.value = '';
     champImage.value = '';
 });
+
+
